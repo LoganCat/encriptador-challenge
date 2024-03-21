@@ -179,3 +179,7 @@ main{
     font-size: 16px;
     line-height: 19.36px;
 }
+
+.ocultar{
+    display: none;
+}
