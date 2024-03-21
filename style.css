@@ -144,29 +144,25 @@ main{
 }
 
 .contenedor-texto{
+    background-color: aqua;
     position: absolute;
-    bottom: 410px;
     width: 336px;
     height: 781px;
-    padding: 0;
+    margin: 72px 40px auto;
     box-sizing: border-box;
-    margin-left: 25px;
 }
 
 .contenedor-texto p{
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    color: #495057;
 }
 
-.btn-copiar{
+.btn-copy{
     display: flex;
     position: absolute;
-    bottom: 400px;
-    top: 700px;
+    margin: 860px 40px auto;
     background-color: aqua;
-    padding-left: 40px;
 }
 
 .copiar{
@@ -177,13 +173,9 @@ main{
     color: #0A3871;
     border: 1px solid #0A3871;
     cursor: pointer;
-    position: relative;
-    top: 100px;
-    right: 4px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19.36px;
-    display: none;
 }
 
 .ocultar{
