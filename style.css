@@ -87,6 +87,13 @@ footer{
     color: #495057;
 }
 
+.instruccion i{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
 .btn-encriptar-desencriptar{
     position: absolute;
     top: 885px;
@@ -217,6 +224,7 @@ footer{
     display: inline-block;
     top: 845px;
     right: 8%;
+    display: none;
 }
 
 .copiar{
@@ -239,10 +247,6 @@ footer{
     background-color: #D8DFE8;
     transform: scale(1.09);
     transition: all .4s ease-in;
-}
-
-.ocultar{
-    display: none;
 }
 
 /* Footer */
@@ -297,5 +301,14 @@ footer{
 .redes a:hover i{
     color: #D8DFE8;
     transition: 0.8s;
+}
+
+/* Ocultar/mostrar botones */
+.ocultar{
+    display: none;
+}
+
+.mostrar{
+    display: block;
 }
 

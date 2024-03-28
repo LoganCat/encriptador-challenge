@@ -3,9 +3,23 @@ var botonDesencriptar = document.querySelector(".desencriptar");
 var imagenArea2 = document.querySelector(".muneco");
 var h3yP = document.querySelector(".decodificar-texto");
 var textoEncriptarDesencriptar = document.querySelector(".texto-desencriptado");
+var mostrarBoton = document.querySelector(".btn-copy");
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
+
+// function borrarTexto() {
+//     document.getElementById("ingresa-texto").value = "";
+// }
+
+document.getElementById("borrarTencriptar").addEventListener("click", function() {
+    document.getElementById("ingresa-texto").value = "";
+});
+
+document.getElementById("borrarTdesencriptar").addEventListener("click", function() {
+    document.getElementById("ingresa-texto").value = "";
+});
+
 
 function encriptar(){
     ocultarAdelante();
@@ -27,7 +41,9 @@ function recuperarTexto(){
 function ocultarAdelante(){
     imagenArea2.classList.add("ocultar");
     h3yP.classList.add("ocultar");
+    mostrarBoton.classList.add("mostrar");
 }
+
 
 function encriptarTexto(mensaje){
     var texto = mensaje;
