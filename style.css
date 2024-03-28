@@ -17,7 +17,7 @@ header{
     top: 40px;
     left: 40px;
     display: inline-block;
-    background-color: #333;
+    background-color: gray;
 }
 
 main{
@@ -31,7 +31,7 @@ main{
 
 footer{
     position: absolute;
-    background-color: #333;
+    background-color: gray;
     padding: 20px;
     /* Probar quitar bottom */
     bottom: 0;
@@ -122,6 +122,7 @@ footer{
     cursor: pointer;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     transition: all .4s ease-out;
+    /* word-wrap: break-word; */
 }
 
 /* Efecto Hover Botones */
@@ -141,4 +142,101 @@ footer{
     transition: all .4s ease-in;
 }
 
+/* Área 2 */
+.area2{
+    position: relative;
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    right: 40px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+}
 
+.muneco{
+    position: absolute;
+    display: inline-block;
+    top: 243px;
+    right: 8%;
+}
+
+.decodificar-texto{
+    position: absolute;
+    width: 360px;
+    top: 579px;
+    right: 8%;
+}
+
+.decodificar-texto h3{
+    height: 58px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    text-align: center;
+    color: #343A40;
+    margin-bottom: 20px;
+}
+
+.decodificar-texto p{
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #495057;
+}
+
+.contenedor-texto{
+    position:absolute;
+    /* display: flex;
+    justify-content: center; */
+    background-color: aquamarine;
+    opacity: .5;
+    width: 336px;
+    height: 781px;
+    top: 32px;
+    right: 8%;
+}
+
+.texto-desencriptado{
+    /* background-color: red; */
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #495057;
+    word-wrap: break-word;
+}
+
+.btn-copy{
+    position: absolute;
+    display: inline-block;
+    top: 845px;
+    right: 8%;
+}
+
+.copiar{
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    background-color: #FFFFFF;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .4s ease-out;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Hover de btn Copiar */
+.copiar:hover{
+    background-color: #D8DFE8;
+    transform: scale(1.09);
+    transition: all .4s ease-in;
+}
+
+.ocultar{
+    display: none;
+}
