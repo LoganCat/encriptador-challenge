@@ -12,3 +12,133 @@ body{
     background-color: #F3F5FC;
 }
 
+header{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    display: inline-block;
+    background-color: #333;
+}
+
+main{
+    width: 100vw;
+    height: 94vh;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+footer{
+    position: absolute;
+    background-color: #333;
+    padding: 20px;
+    /* Probar quitar bottom */
+    bottom: 0;
+    display: inline-block;
+    width: 100vw;
+    text-align: center;
+}
+
+/* Área 1 */
+.area1{
+    background-color: greenyellow;
+    position: relative;
+    width: 680px;
+    left: 240px;
+    margin-top: 20px;
+}
+
+.ingresa-texto{
+    position: absolute;
+    top: 168px;
+    max-width: 100%;
+}
+
+.texto-ingresado{
+    width: 100vh;
+    height: 60vh;
+    border: none;
+    resize: none;
+    outline: none;
+    background-color: #F3F5FC;
+    cursor: text;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.texto-ingresado::placeholder{
+    font-family: "Inter", sans-serif;
+    color: #0A3871;
+    opacity: 0.3;
+}
+
+.instruccion{
+    position: absolute;
+    top: 850px;
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.7;
+    color: #495057;
+}
+
+.btn-encriptar-desencriptar{
+    position: absolute;
+    top: 885px;
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Botones */
+.encriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    transition: all .4s ease-out;
+}
+
+.desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    transition: all .4s ease-out;
+}
+
+/* Efecto Hover Botones */
+.encriptar:hover{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    transform: scale(1.08);
+    transition: all .4s ease-in;
+}
+
+.desencriptar:hover{
+    background-color: #0A3871;
+    color: #D8DFE8;
+    border: 1px solid #0A3871;
+    transform: scale(1.08);
+    transition: all .4s ease-in;
+}
+
+
