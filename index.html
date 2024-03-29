@@ -12,62 +12,63 @@
     <title>Encriptador de Texto</title>
 </head>
 <body>
-    <header>
-        <div class="contenedor-imagen">
-            <img class="logo-header" src="imagenes/Logo.png" 
-            alt="logo-alura">
-        </div>
-    </header>
-
-    <main>
-        <section class="area1">
-            <div class="ingresa-texto">
-                <textarea class="texto-ingresado" id="ingresa-texto" placeholder="Ingresa el Texto Aquí" ></textarea>
+        <header>
+            <div class="contenedor-imagen">
+                <img class="logo-header" src="imagenes/Logo.png" 
+                alt="logo-alura">
             </div>
-
-            <div class="instruccion">
-                <p><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos.</p>
-            </div>
-            
-            <div class="btn-encriptar-desencriptar">
-                <input type="button" value="Encriptar" class="encriptar" id="borrarTencriptar" oneclick="mostrarBtn">
-                <input type="button" value="Desencriptar" class="desencriptar" id="borrarTdesencriptar">
+        </header>
+    
+        <main>
+            <section class="area1">
+                <div class="contenedor-area1">
+                    <div class="ingresa-texto">
+                        <textarea class="texto-ingresado" id="ingresa-texto" placeholder="Ingresa el Texto Aquí" ></textarea>
+                    </div>
+        
+                    <div class="instruccion">
+                        <p><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos.</p>
+                    </div>
+                    
+                    <div class="btn-encriptar-desencriptar">
+                        <input type="button" value="Encriptar" class="encriptar" id="borrarTencriptar" oneclick="mostrarBtn">
+                        <input type="button" value="Desencriptar" class="desencriptar" id="borrarTdesencriptar">
+                    </div>
+                </div>
                 
-            </div>
-        </section>
-
-        <section class="area2">
-            <div class="muneco">
-                <img src="imagenes/Muñeco.png" alt="">
-            </div>
-
-            <div class="decodificar-texto">
-                <h3>Ningún mensaje fue encontrado.</h3>
-                <p>ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-
-            <div class="contenedor-texto">
-                <p class="texto-desencriptado"></p>
-            </div>
-
-            <div class="btn-copy">
-                <input type="button" id="btn-copiar" value="Copiar" class="copiar">
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <section class="cajaFooter">
-            <div class="redes">
-                <a href="https://www.linkedin.com/in/javier-gh/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/LoganCat"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <div class="footerBottom">
-                <p>Designed by</p>
-                <p class="desarrollo">Javier García Hernández</p>
-            </div>
-        </section>   
-    </footer>
+                <div class="cajaFooter">
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/javier-gh/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/LoganCat"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="footerBottom">
+                        <p>Designed by</p>
+                        <p class="desarrollo">Javier García Hernández</p>
+                    </div>
+                </div>   
+            </section>
+    
+            <section class="area2">
+                <div class="contenedor-area2">
+                    <div class="muneco">
+                        <img class="imgMuneco" src="imagenes/Muñeco.png" alt="">
+                    </div>
+        
+                    <div class="decodificar-texto">
+                        <h3>Ningún mensaje fue encontrado.</h3>
+                        <p>ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+        
+                    <div class="contenedor-texto">
+                        <p class="texto-desencriptado" id="textoDesencriptado"></p>
+                    </div>
+        
+                    <div class="btn-copy">
+                        <input type="button" id="btn-copiar" value="Copiar" class="copiar">
+                    </div>
+                </div>
+            </section>
+        </main>
 </body>
 <script src="script.js"></script>
 </html>

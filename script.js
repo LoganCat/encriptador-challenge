@@ -20,6 +20,10 @@ document.getElementById("borrarTdesencriptar").addEventListener("click", functio
     document.getElementById("ingresa-texto").value = "";
 });
 
+// document.getElementById("btn-copiar").addEventListener("click", function() {
+//     document.getElementById("textoDesencriptado").value = "";
+// });
+
 
 function encriptar(){
     ocultarAdelante();
@@ -36,6 +40,7 @@ function desencriptar(){
 function recuperarTexto(){
     var cajatexto = document.querySelector(".texto-ingresado");
     return cajatexto.value;
+
 }
 
 function ocultarAdelante(){
@@ -104,7 +109,7 @@ function desencriptarTexto(mensaje){
     return textoFinal;
 }
 
-const btnCopiar = document.querySelector(".copiar");
+const btnCopiar = document.querySelector(".copiar");   
     btnCopiar.addEventListener("click", copiar = () => {
         var contenido = document.querySelector(".texto-desencriptado")
         .textContent;
