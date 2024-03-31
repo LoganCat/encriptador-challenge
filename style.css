@@ -285,8 +285,9 @@ main{
 
 /* Footer */
 .cajaFooter{
+    background-color: gray;
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     /* width: 100%; */
     /* padding: 70px 30px 20px; */
 }
@@ -321,7 +322,7 @@ main{
 
 .desarrollo{
     opacity: 0.7;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1px;
     font-weight: 700;
     margin: 5px;
@@ -354,8 +355,13 @@ main{
         display: flex;
     }
 
+    .area1{
+        display: flex;
+        justify-content:end;
+    }
+
     .contenedor-area1{
-        left: 1%;
+        left: -10%;
         width: 80%;
     }
 
@@ -373,9 +379,29 @@ main{
         font-size: 3vh;
     }
 
+    .cajaFooter{
+        margin-bottom: 53%;
+        margin-right: -5%;
+    }    
+
+    .redes a {
+        font-size: 1vw;
+        max-width: 100%;      
+
+    }
+
+
+    .footerBottom p{
+        font-size: 1vw;
+        text-align: center;
+        max-width: 100%;
+    }
+
+
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1080px) and (min-height: 1174px){
+
+@media only screen and (min-width: 768px) and (min-height: 1174px){
     main{
         display: flex;
         flex-direction: column;
@@ -390,6 +416,7 @@ main{
         left: 0;
         top: 0;
     }
+
     .btn-encriptar-desencriptar{
         display: flex;
         justify-content: space-between;
@@ -428,6 +455,7 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
     
     .texto-desencriptado{
@@ -440,4 +468,90 @@ main{
         top: 80%;
     }
 
+    .cajaFooter{
+        margin-bottom: 140%;
+        margin-right: 1%;
+    }    
+
+
+}
+
+@media only screen and (min-width: 375px) and (min-height: 933px){
+    main{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-height: auto;
+        min-height: 933px;
+        gap: 2em;
+    }
+
+    .contenedor-area1{
+        width: 343px;
+        min-width: 100%;
+        height: 624px;
+        left: 0;
+        top: 0;
+    }
+
+    .instruccion{
+        margin-top: -10px;
+    }
+
+    .btn-encriptar-desencriptar{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .encriptar{
+        margin-bottom: 2em;
+    }
+
+    .muneco{
+        display: none;
+    }
+
+    .area2{
+        align-items: center;
+        padding: 30px;
+        height: auto;
+        
+        
+    }
+
+    .contenedor-area2{
+        display: inline-block;
+        padding: 20px;
+        min-height: 133px;
+        height: auto;
+    }
+
+    .contenedor-area2{
+        padding: 10px;
+        /* height: 100%; */
+        display: flex;   
+        flex-direction: column;
+        
+    }
+
+    .contenedor-texto{
+        position: relative;
+        display: contents;
+        top: 80%;
+    }
+    
+    .texto-desencriptado{
+        flex: 1 ;
+    }
+
+    .btn-copy{
+        margin-top: 60px;
+    }
+
+    .cajaFooter{
+        bottom: 87.5%;
+        left: 62%;
+    }
+    
 }
