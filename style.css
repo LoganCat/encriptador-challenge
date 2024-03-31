@@ -285,7 +285,7 @@ main{
 
 /* Footer */
 .cajaFooter{
-    background-color: gray;
+    /* background-color: gray; */
     position: fixed;
     bottom: 10px;
     /* width: 100%; */
@@ -483,7 +483,9 @@ main{
         position: relative;
         max-height: auto;
         min-height: 933px;
-        gap: 2em;
+    }
+    .area1{
+        flex-basis: 400px;
     }
 
     .contenedor-area1{
@@ -513,26 +515,14 @@ main{
     }
 
     .area2{
-        align-items: center;
-        padding: 30px;
-        height: auto;
-        
-        
+
     }
 
     .contenedor-area2{
         display: inline-block;
         padding: 20px;
-        min-height: 133px;
+        min-height: 186px;
         height: auto;
-    }
-
-    .contenedor-area2{
-        padding: 10px;
-        /* height: 100%; */
-        display: flex;   
-        flex-direction: column;
-        
     }
 
     .contenedor-texto{
@@ -550,8 +540,10 @@ main{
     }
 
     .cajaFooter{
-        bottom: 87.5%;
+        position: absolute;
+        bottom: 86%;
         left: 62%;
+        background-color: none;
     }
     
 }
